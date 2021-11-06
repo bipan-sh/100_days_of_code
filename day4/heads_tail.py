@@ -1,3 +1,4 @@
+#Generate heads or tails at random
 import random
 
 random_integer = random.randint(1, 2)
