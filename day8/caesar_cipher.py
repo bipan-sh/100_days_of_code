@@ -5,18 +5,12 @@ alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n'
 import art
 print(art.logo)
 
-
-direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
-text = input("Type your message:\n").lower()
-shift = int(input("Type the shift number:\n"))
-
-#combined function
 def caesar(text, shift, direction):
-
+    
     if shift > 26:
         shift = shift % 26 
     new_word = []
-  
+
     for i in text:
         
         if i in alphabet:
@@ -39,6 +33,16 @@ def caesar(text, shift, direction):
     ciphered = ''.join(new_word)
 
     print(f"The {direction}d text is {ciphered}")
+
+
+
+
+direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
+text = input("Type your message:\n").lower()
+shift = int(input("Type the shift number:\n"))
+
+#combined function
+
 
 caesar(text, shift, direction)
 #two functions to encode and decode each
