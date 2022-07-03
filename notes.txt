@@ -1,3 +1,0 @@
-Notes from Day 16 - OOP
-Classes are the blue print and objects are the objects created from that blueprint
-for eg, waiter can be the class, but waiters like Jim, Harry are objects under the same class waiter
