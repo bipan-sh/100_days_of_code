@@ -14,4 +14,3 @@ for name in names:
     if name_club not in already_selected_club:
         print(f"They've got {name_club}")
     already_selected_club.append(name_club)
-#haven't changed anything
